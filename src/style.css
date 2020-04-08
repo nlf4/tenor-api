@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+   
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    background: grey;
+    margin-bottom: 30px;
+  }
+
+  body{
+      background-color: #5ec289;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Do Hyeon', sans-serif;
+      font-size: 32px;
+     
+
+  }
+
+  #img-item{
+      border-radius: 20px;
+      margin: 8px;
+      box-shadow: -6px 6px 4px -1px #2e6437;
+  }
+
+  #header-div{
+      margin: 30px;
+      color: #3b4829;
+  }
+
+  #root{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+
+  #search-field {
+    padding: 8px;
+    font-size: 19px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    
+}
+.css-input:focus {
+    outline:none;
+}
+
+.suggest-btn {
+    background-color:#386c5f;
+	border-radius:28px;
+	border: solid 2px #5ec289;
+	display:inline-block;
+	cursor:pointer;
+    color:#ffffff;
+    margin-left: 3px;
+	font-family:Arial;
+	font-size:18px;
+    padding:8px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.suggest-btn:hover {
+    background-color:#5ec289;
+    border: solid 2px #386c5f;
+}
+
+#search-btn {
+	background-color:#386c5f;
+	border-radius:28px;
+	border: solid 1px #5ec289;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+    padding:9px 20px;
+    margin-left: 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+#search-btn:hover {
+    background-color:#5ec289;
+    border: solid 1px #386c5f;
+}
+#search-btn:active {
+	position:relative;
+	top:1px;
+}
+
+#app-div{
+    /* border: 1px solid blue; */
+}
+#header-div{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#results-div{
+    /* border: 1px solid yellow; */
+    background-color: #40864c;
+    padding: 20px;
+    min-width: 1200px;
+    min-height: 800px;
+
+}
