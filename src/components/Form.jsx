@@ -31,7 +31,7 @@ export default class props extends React.Component {
   };
   render() {
     return (
-      <form onSubmit={e => {e.preventDefault(); this.props.getSearchSuggestions(this.state.searchStr.value);}}>
+      <form onSubmit={e => {e.preventDefault(); this.props.getSearchSuggestions(this.state.searchStr.value); this.props.getGifs(this.state.searchStr.value);}}>
         <input 
           type="text"
           id="search-field"

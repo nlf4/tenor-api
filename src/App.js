@@ -26,7 +26,7 @@ export default class App extends Component {
     });
     axios
       .get(
-        `https://api.tenor.com/v1/search?q=${query}&key=SB8SEBOC0V92&limit=14`
+        `https://api.tenor.com/v1/search?q=${query}&key=SB8SEBOC0V92&limit=20`
         // `https://api.tenor.com/v1/registershare?id=8776030&key=SB8SEBOC0V92&q=excited`
       )
       .then(results => {
