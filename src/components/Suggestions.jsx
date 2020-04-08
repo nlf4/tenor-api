@@ -1,5 +1,6 @@
 import React from "react";
 import Masonry from 'react-masonry-css'
+
 import '../style.css'
 
 const Suggestions = ({ data, getGifs }) => {
